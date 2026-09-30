@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mimi — Cookies dorés & Smoothies frais à Asnières-sur-Seine</title>
+<link rel="icon" href="images/favicon/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+<meta name="description" content="Mimi, cookies moelleux préparés chaque matin et smoothies frais pressés, à Bécon, Asnières-sur-Seine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=5">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu">
+    <span></span><span></span><span></span>
+  </button>
+  <a href="#accueil" class="logo">mimi</a>
+  <div class="header-right">
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-btn active" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
+    <a href="#carte" class="header-cta" data-i18n="header_cta">Voir la carte</a>
+  </div>
+</header>
+
+<nav class="side-nav" id="sideNav">
+  <button class="side-nav-close" id="sideNavClose" aria-label="Fermer le menu">&times;</button>
+  <ul>
+    <li><a href="#accueil" class="nav-link" data-i18n="nav_accueil">Accueil</a></li>
+    <li><a href="#histoire" class="nav-link" data-i18n="nav_histoire">Notre histoire</a></li>
+    <li><a href="#carte" class="nav-link" data-i18n="nav_carte">Carte</a></li>
+    <li><a href="#catering" class="nav-link" data-i18n="nav_catering">Catering</a></li>
+    <li><a href="#instagram" class="nav-link" data-i18n="nav_instagram">Instagram</a></li>
+    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Nous trouver</a></li>
+  </ul>
+  <div class="side-nav-foot">
+    <span>@mimi.asnieres</span>
+    <span>Bécon, Asnières-sur-Seine</span>
+  </div>
+</nav>
+<div class="side-nav-overlay" id="sideNavOverlay"></div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero-pin-wrap" id="accueil">
+    <div class="hero hero-scale" style="background-image:url('images/hero.jpg')">
+      <div class="hero-scrim"></div>
+      <div class="hero-content">
+        <div class="reviews-badge reveal d1">
+          <span class="stars">★★★★★</span> <span data-i18n="hero_badge">126 avis Google</span>
+        </div>
+        <h1 class="hero-title reveal d2" data-i18n="hero_title"><span class="outline">COOKIES DORÉS.</span><br>SMOOTHIES FRAIS.</h1>
+        <p class="hero-text reveal d3" data-i18n="hero_text">Quelque chose de frais se prépare à <strong>Bécon</strong>. Des cookies fondants cuits chaque matin, des smoothies pressés minute. Une recette qui change chaque semaine, les classiques qui restent, et un petit quelque chose pour tout le monde.</p>
+        <div class="hero-actions reveal d4">
+          <a href="#carte" class="btn btn-pink"><span data-i18n="hero_cta1">Trouve ta préférée</span> <span aria-hidden="true">→</span></a>
+          <a href="#histoire" class="btn-link" data-i18n="hero_cta2">À propos de Mimi</a>
+        </div>
+      </div>
+      <a href="#histoire" class="scroll-badge" aria-label="Défiler vers le bas">
+        <svg viewBox="0 0 100 100" class="scroll-badge-text">
+          <path id="circlePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" fill="none"/>
+          <text font-size="9" letter-spacing="2" fill="currentColor">
+            <textPath href="#circlePath" id="scrollBadgeText" data-i18n="scroll_badge">CONTINUE DE DÉFILER · CONTINUE DE DÉFILER ·</textPath>
+          </text>
+        </svg>
+        <span class="scroll-badge-arrow">↓</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- HISTOIRE -->
+  <section class="story" id="histoire">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dash"></span><span data-i18n="story_eyebrow">Notre histoire</span><span class="dash"></span></p>
+      <h2 class="outline-title" data-i18n="story_title">UNE RECETTE<br><em>réinventée</em></h2>
+      <div class="story-text">
+        <p data-i18n="story_p1">Chez Mimi, on croit qu'un cookie et un smoothie racontent bien plus qu'une envie de goûter.</p>
+        <p data-i18n="story_p2">Tout commence par une pâte à cookie de tradition américaine et des fruits mixés minute, sans artifice. Une préparation simple, généreuse et soignée, pensée pour les pauses du quotidien à Asnières.</p>
+        <p data-i18n="story_p3">Cette exigence-là est le cœur de <strong>MIMI</strong>.</p>
+      </div>
+    </div>
+
+    <div class="wave wave-down"></div>
+
+    <div class="story-dark">
+      <div class="wrap story-dark-inner">
+        <svg class="doodle" viewBox="0 0 220 200" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="70" cy="150" rx="26" ry="10"/>
+          <path d="M46 150 V95 a24 24 0 0 1 48 0 v55"/>
+          <path d="M50 95 q20 -22 40 0"/>
+          <path d="M96 60 l10 -14 l10 14"/>
+          <path d="M140 120 h34 v40 a17 17 0 0 1 -34 0 Z"/>
+          <path d="M148 120 v-14 a9 9 0 0 1 18 0 v6"/>
+          <path d="M137 96 q7 -10 0 -18"/>
+          <path d="M150 92 q7 -10 0 -18"/>
+        </svg>
+        <p class="story-dark-text" data-i18n="story_dark_text">MIMI est née de l'idée de <strong>réinventer la pause goûter</strong>. Mêler le réconfort d'un cookie tout juste sorti du four et la fraîcheur d'un fruit pressé, l'Amérique et Asnières, le gourmand et le sain.</p>
+
+        <div class="carousel" id="carousel">
+          <div class="carousel-track">
+            <img src="images/story-1.jpg" alt="Cookie au chocolat fondant tout juste sorti du four" class="carousel-img active">
+            <img src="images/story-2.jpg" alt="Pile de cookies servie avec un verre de lait" class="carousel-img">
+            <img src="images/story-3.jpg" alt="Trois smoothies alignés sur le comptoir de préparation" class="carousel-img">
+            <img src="images/story-4.jpg" alt="Smoothie aux fruits rouges avec fruits qui s'envolent" class="carousel-img">
+          </div>
+          <div class="carousel-controls">
+            <button id="carPrev" aria-label="Photo précédente">←</button>
+            <button id="carNext" aria-label="Photo suivante">→</button>
+            <span class="carousel-count"><span id="carIndex">01</span> / 04</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wave wave-up"></div>
+  </section>
+
+  <!-- CARTE -->
+  <section class="menu" id="carte">
+    <div class="wrap">
+      <p class="eyebrow"><span class="dash"></span><span data-i18n="menu_eyebrow">Carte</span><span class="dash"></span></p>
+      <h2 class="menu-title" data-i18n="menu_title">NOS<br><span>GOURMANDISES</span></h2>
+
+      <div class="menu-layout">
+        <p class="menu-intro" data-i18n="menu_intro">Préparés chaque matin selon nos propres recettes. Croustillants sur les bords, fondants au cœur pour les cookies. Fruits mixés minute pour les smoothies. Chaque recette, une histoire.</p>
+
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="cookies" data-i18n="tab_cookies">Cookies</button>
+          <button class="tab-btn" data-tab="smoothies" data-i18n="tab_smoothies">Smoothies</button>
+          <button class="tab-btn" data-tab="emporter" data-i18n="tab_emporter">À emporter</button>
+        </div>
+      </div>
+
+      <!-- TAB COOKIES -->
+      <div class="tab-panel active" data-panel="cookies">
+        <div class="menu-cat">
+          <h3><span data-i18n="cat_classiques">Classiques</span> <span>02</span></h3>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="images/menu-chocolat.jpg" alt="Cookie au chocolat fondant coupé en deux">
+              <div>
+                <h4 data-i18n="item_choc_name">Chocolat Fondant</h4>
+                <p data-i18n="item_choc_desc">Pépites de chocolat noir, cœur coulant et une pointe de fleur de sel. Le classique incontournable.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="images/menu-pepites.jpg" alt="Pile de cookies aux pépites de chocolat au lait">
+              <div>
+                <h4 data-i18n="item_pepites_name">Pépites Traditionnel</h4>
+                <p data-i18n="item_pepites_desc">Pâte moelleuse, éclats de chocolat au lait. Simple, doré, parfait avec un café.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-cat">
+          <h3><span data-i18n="cat_speciales">Spéciales</span> <span>03</span></h3>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="images/menu-pecan.jpg" alt="Cookie garni d'éclats de noix de pécan et de chocolat">
+              <div>
+                <h4><span data-i18n="item_pecan_name">Pécan Doré</span> <span class="tag" data-i18n="tag_bestseller">Best-seller</span></h4>
+                <p data-i18n="item_pecan_desc">Noix de pécan torréfiées et filet de chocolat au lait. Croquant à chaque bouchée.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="images/menu-amande.jpg" alt="Cookie recouvert d'amandes effilées et de chocolat">
+              <div>
+                <h4 data-i18n="item_amande_name">Amande Caramel</h4>
+                <p data-i18n="item_amande_desc">Éclats d'amandes effilées sur une base au beurre de caramel. Craquant et gourmand.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="images/menu-lait.jpg" alt="Cookies empilés servis avec une bouteille de lait">
+              <div>
+                <h4 data-i18n="item_lait_name">Cassé au Lait</h4>
+                <p data-i18n="item_lait_desc">Cœur fondant, bords craquants, à tremper. Le goûter qui rappelle l'enfance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB SMOOTHIES -->
+      <div class="tab-panel" data-panel="smoothies">
+        <div class="menu-cat">
+          <h3><span data-i18n="cat_classiques">Classiques</span> <span>02</span></h3>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="images/menu-fraise.jpg" alt="Smoothie fraise framboise dans un verre">
+              <div>
+                <h4 data-i18n="item_fraise_name">Fraise-Framboise</h4>
+                <p data-i18n="item_fraise_desc">Fraises et framboises fraîches, une pointe de banane. Doux, fruité, rafraîchissant.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="images/menu-mangue.jpg?v=3" alt="Smoothie mangue dans un verre, mangues coupées autour">
+              <div>
+                <h4><span data-i18n="item_mangue_name">Mangue-Passion</span> <span class="tag" data-i18n="tag_bestseller">Best-seller</span></h4>
+                <p data-i18n="item_mangue_desc">Mangue bien mûre et fruit de la passion. Une explosion tropicale à chaque gorgée.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-cat">
+          <h3><span data-i18n="cat_speciales">Spéciales</span> <span>04</span></h3>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <img src="images/menu-myrtille.jpg?v=3" alt="Smoothie violet aux myrtilles avec pailles dorées">
+              <div>
+                <h4 data-i18n="item_myrtille_name">Myrtille Intense</h4>
+                <p data-i18n="item_myrtille_desc">Myrtilles sauvages, banane et lait d'avoine. Antioxydant, gourmand et bien épais.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="images/menu-vert.jpg" alt="Main tenant un smoothie vert">
+              <div>
+                <h4 data-i18n="item_vert_name">Vert Détox</h4>
+                <p data-i18n="item_vert_desc">Épinard, pomme verte, citron et gingembre. Frais, vif, plein d'énergie.</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="images/menu-ananas.jpg?v=3" alt="Smoothie coco-ananas dans un verre, noix de coco en arrière-plan">
+              <div>
+                <h4 data-i18n="item_ananas_name">Ananas-Coco</h4>
+                <p data-i18n="item_ananas_desc">Ananas rôti, lait de coco et une touche de vanille. Un air de vacances.</p>
+                <span class="allergen"><span aria-hidden="true">ⓘ</span> <span data-i18n="allergen_nuts">fruits à coque</span></span>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="images/menu-latte.jpg?v=3" alt="Latte glacé dans un grand verre">
+              <div>
+                <h4 data-i18n="item_latte_name">Latte Glacé Vanille</h4>
+                <p data-i18n="item_latte_desc">Café, banane et vanille, glacé et crémeux. Le compromis parfait café-smoothie.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB EMPORTER -->
+      <div class="tab-panel" data-panel="emporter">
+        <div class="menu-cat">
+          <h3><span data-i18n="cat_formules">Formules</span> <span>03</span></h3>
+          <div class="takeaway-list">
+            <div class="takeaway-item">
+              <div>
+                <h4 data-i18n="take_box_name">Box Découverte</h4>
+                <p data-i18n="take_box_desc">6 cookies au choix, dans une boîte prête à offrir.</p>
+              </div>
+              <span class="price">14,90 €</span>
+            </div>
+            <div class="takeaway-item">
+              <div>
+                <h4 data-i18n="take_pack_name">Pack Smoothies x3</h4>
+                <p data-i18n="take_pack_desc">3 smoothies de 33cl au choix, à emporter au bureau.</p>
+              </div>
+              <span class="price">13,50 €</span>
+            </div>
+            <div class="takeaway-item">
+              <div>
+                <h4 data-i18n="take_duo_name">Formule Duo</h4>
+                <p data-i18n="take_duo_desc">1 cookie + 1 smoothie de saison. La pause qui va bien.</p>
+              </div>
+              <span class="price">7,90 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CATERING -->
+  <section class="catering" id="catering" style="background-image:url('images/catering.jpg')">
+    <div class="catering-scrim"></div>
+    <div class="wrap catering-inner">
+      <p class="eyebrow eyebrow-light"><span class="dash"></span><span data-i18n="catering_eyebrow">Catering</span><span class="dash"></span></p>
+      <h2 class="catering-title"><span class="outline" data-i18n="catering_title_1">DES PETITS BONHEURS</span><br><span data-i18n="catering_title_2">À PARTAGER AVEC MIMI</span></h2>
+      <p class="catering-text" data-i18n="catering_text">Anniversaires, pots de bureau, un lundi qui aurait besoin de l'être un peu moins. On prépare des <strong>plateaux sur-mesure</strong> de cookies et de smoothies pour chaque occasion.</p>
+      <a href="#contact" class="btn btn-pink"><span data-i18n="catering_cta">Commander</span> <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="instagram" id="instagram">
+    <div class="wrap">
+      <p class="eyebrow-solo"><span class="ig-icon" aria-hidden="true">◎</span> <span data-i18n="insta_eyebrow">MIMI SUR INSTAGRAM</span></p>
+      <div class="instagram-head">
+        <h2 class="outline-title small"><span data-i18n="insta_title_1">DÉCOUVRE CE QUI SE PRÉPARE</span> <span data-i18n="insta_title_2">AVANT TOUT LE MONDE.</span></h2>
+        <div class="instagram-side">
+          <p data-i18n="insta_side_text">Rejoins les <strong>1 842</strong> autres qui ne ratent jamais une fournée — chaque création et boisson de saison arrive d'abord sur notre Instagram.</p>
+          <a href="#" class="btn btn-pink"><span data-i18n="insta_cta">@mimi.asnieres sur IG</span> <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="insta-grid">
+        <img src="images/insta-1.jpg" alt="Smoothie aux fruits rouges avec fruits en suspension">
+        <img src="images/insta-2.jpg" alt="Smoothie bowl garni d'ananas et de granola">
+        <img src="images/insta-3.jpg" alt="Rangée de smoothies colorés dans des bocaux">
+        <img src="images/insta-4.jpg" alt="Cookies au chocolat sur papier cuisson">
+        <img src="images/insta-5.jpg" alt="Trois smoothies verts, beiges et violets côte à côte">
+        <img src="images/insta-6.jpg" alt="Main tenant un smoothie vert devant un mur fleuri">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / LOCALISATION -->
+  <section class="location" id="contact">
+    <div class="wave wave-down light"></div>
+    <div class="wrap">
+      <p class="eyebrow eyebrow-light"><span class="dash"></span><span data-i18n="location_eyebrow">Passe-nous voir</span><span class="dash"></span></p>
+      <h2 class="outline-title light"><span data-i18n="location_title_1">RETROUVE-NOUS</span><br><span data-i18n="location_title_2">À</span> <em>Bécon.</em></h2>
+
+      <div class="location-grid">
+        <div class="map-card">
+          <iframe
+            title="Localisation Mimi à Bécon, Asnières-sur-Seine"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=2.2705%2C48.9070%2C2.2860%2C48.9145&amp;layer=mapnik&amp;marker=48.9106%2C2.2779"
+            loading="lazy">
+          </iframe>
+          <div class="map-pin-label">mimi</div>
+          <div class="map-address">
+            <strong>4 rue du Point du Jour</strong>
+            <span>Bécon, 92600 Asnières-sur-Seine</span>
+            <a href="https://www.openstreetmap.org/?mlat=48.9106&mlon=2.2779#map=17/48.9106/2.2779" target="_blank" rel="noopener"><span data-i18n="map_open">Ouvrir dans Maps</span> →</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <p class="info-label" data-i18n="info_horaires">Horaires</p>
+          <ul class="hours">
+            <li><span data-i18n="day_lun">Lun</span><span>08:00–19:00</span></li>
+            <li><span data-i18n="day_mar">Mar</span><span>08:00–19:00</span></li>
+            <li><span data-i18n="day_mer">Mer</span><span>08:00–19:00</span></li>
+            <li><span data-i18n="day_jeu">Jeu</span><span>08:00–19:00</span></li>
+            <li><span data-i18n="day_ven">Ven</span><span>08:00–20:00</span></li>
+            <li><span data-i18n="day_sam">Sam</span><span>09:00–20:00</span></li>
+            <li><span data-i18n="day_dim">Dim</span><span>09:00–14:00</span></li>
+          </ul>
+
+          <p class="info-label" data-i18n="info_telephone">Téléphone</p>
+          <p class="info-value">01 84 16 27 30</p>
+
+          <p class="info-label">Email</p>
+          <p class="info-value">bonjour@mimi-asnieres.fr</p>
+
+          <p class="info-label" data-i18n="info_commandes">Commandes</p>
+          <p class="info-value">commandes@mimi-asnieres.fr</p>
+
+          <p class="info-label" data-i18n="info_suis">Suis-nous</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="WhatsApp">☎</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo">mimi</div>
+      <div class="footer-bottom">
+        <span data-i18n="footer_copy">© 2026 Mimi — Tous droits réservés</span>
+        <span class="footer-links"><a href="#" data-i18n="footer_privacy">Confidentialité</a><a href="#" data-i18n="footer_terms">Conditions</a></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/main.js?v=4"></script>
+<script src="js/hero-scroll.js?v=1"></script>
+</body>
+</html>
