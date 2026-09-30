@@ -1,5 +1,7 @@
 # MIMI
 
+**Voir le site : [https://youss-dev-mimi.netlify.app](https://youss-dev-mimi.netlify.app)**
+
 Site vitrine d'une boutique de cookies et smoothies (projet de démonstration, marque fictive).
 
 Réalisé par **Youssouf**, développeur web freelance, comme pièce de portfolio.
