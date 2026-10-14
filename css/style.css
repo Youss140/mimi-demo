@@ -257,22 +257,22 @@ a { color: inherit; text-decoration: none; }
 .story-text strong { color: var(--ink); }
 
 .wave { position: relative; height: 90px; background: var(--cream); }
+/* Vagues en masque SVG étiré sur toute la largeur (un clip-path en pixels s'arrêtait à 1440px) */
 .wave::before {
-  content: ""; position: absolute; left: 0; right: 0; height: 90px;
+  content: ""; position: absolute; inset: 0;
   background: var(--wine);
+  -webkit-mask: var(--wave-shape) 0 0 / 100% 100% no-repeat;
+  mask: var(--wave-shape) 0 0 / 100% 100% no-repeat;
 }
 .wave-down::before {
-  bottom: 0;
-  clip-path: path("M0,40 C 240,110 480,0 720,40 C 960,80 1200,10 1440,50 L1440,90 L0,90 Z");
+  --wave-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 90' preserveAspectRatio='none'%3E%3Cpath d='M0,40 C240,110 480,0 720,40 C960,80 1200,10 1440,50 L1440,90 L0,90 Z'/%3E%3C/svg%3E");
 }
-.wave-up { background: var(--wine); }
+/* Transition Histoire (bordeaux) vers Carte (crème) */
 .wave-up::before {
-  background: var(--cream);
-  top: 0;
-  clip-path: path("M0,50 C 240,-10 480,90 720,50 C 960,10 1200,80 1440,40 L1440,0 L0,0 Z");
+  --wave-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 90' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C240,-10 480,90 720,50 C960,10 1200,80 1440,40 L1440,0 L0,0 Z'/%3E%3C/svg%3E");
 }
-.wave.light::before { background: var(--cream); }
-.wave-down.light { background: var(--wine); }
+/* Transition Instagram (crème clair) vers Localisation (bordeaux) */
+.wave-down.light { background: var(--cream-2); }
 
 .story-dark { background: var(--wine); color: var(--cream); text-align: center; padding: 20px 0 60px; }
 .story-dark-inner { display: flex; flex-direction: column; align-items: center; }
